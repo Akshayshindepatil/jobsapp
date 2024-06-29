@@ -1,15 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./index.css";
+import Cookies from "js-cookie";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
+  const token = Cookies.get("jwtToken");
+const navigate=useNavigate();  
+useEffect(()=>{
+  if(token !== undefined){
+    navigate("/")
+  }
+
+},[])
+
   const [allValues, setValues] = useState({
     userName: "",
     password: "",
+    showErrorMsg:false,
+    errorMsg:"",
   });
 
   const onChangeSubmite = async (e) => {
     e.preventDefault();
-    // console.log(allValues.userName);
-    // console.log(allValues.password);
+     console.log(allValues.userName);
+     console.log(allValues.password);
 
     let api = "https://apis.ccbp.in/login";
     let userDetail = {
@@ -21,9 +34,20 @@ const Login = () => {
       body: JSON.stringify(userDetail),
     };
     const responce = await fetch(api, options);
-   // console.log(responce);
+    console.log(responce);
     const data = await responce.json();
     console.log(data);
+
+    if(responce.ok === true){
+      setValues({...allValues,showErrorMsg:false,errorMsg:""});
+      Cookies.set("jwtToken",data.jwt_token)
+      navigate("/");
+
+
+    }else{
+      setValues({...allValues,showErrorMsg:true,errorMsg:data.error_msg})
+    }
+    
   };
 
   const onChangeuser = (e) => {
@@ -68,6 +92,10 @@ const Login = () => {
             Submit
           </button>
         </form>
+        {
+          allValues.showErrorMsg ? (<p className="text-danger" >{allValues.errorMsg}</p>) : null
+
+        }
       </div>
     </div>
   );

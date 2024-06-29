@@ -1,0 +1,98 @@
+.main-con {
+    padding: 20px;
+    background-color: #070707;
+    font-family: Arial, sans-serif;
+  }
+  
+  .jobs-card-cont {
+    list-style: none;
+    background: #434040;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(241, 236, 236, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .top-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .web-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .top-section h4 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .icons-star {
+    color: #f0a500;
+    margin-left: 10px;
+  }
+  
+  .location-emp-cont {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .m-2 {
+    margin-right: 10px;
+  }
+  
+  .location-emp-cont span {
+    color: #777;
+  }
+  
+  .bg-col {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+  }
+  
+  h4 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .skill-d {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .skill-d .img-d {
+    display: flex;
+    align-items: center;
+  }
+  
+  .skill-d img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .Life-of-compony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .Life-of-compony img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+  

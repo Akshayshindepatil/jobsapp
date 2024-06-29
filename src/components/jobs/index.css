@@ -1,7 +1,41 @@
-.container2{
+.filter-display-all-job-cont{
+    width: 100vw;
+   
+    background-color: black;
+    padding: 20px;
     display: flex;
-    height: 100vh;
-    background-color: rgb(231, 235, 18);
+  
+
+}
+.filter-section-cont{
+    width: 25vw;
+    /* border:2px solid white; */
+   
+   
+
+}
+.dispaly-all-jobs{
+    width: 75%;
+    /* border:2px solid red; */
+    
+    display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+  
+
+}
+.serch-bar{
+    width: 70%;
+    margin-bottom: 20px;
+    height: 40px;
+    border: 2px solid rgb(130, 119, 119);
+    background-color: transparent;
+    font-size: 25px;
+    color: white;
+}
+.List-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
