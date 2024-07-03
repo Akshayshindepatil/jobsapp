@@ -30,7 +30,7 @@ const DisplayJobs = (props) => {
         </div>
       </div>
       <div className="location-emp-cont">
-        <div>
+        <div> 
           <FaBriefcase className="m-2" />
           <span>{jobsItem.employment_type}</span>
           <FaLocationDot className="m-2" />

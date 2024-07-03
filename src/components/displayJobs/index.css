@@ -1,7 +1,7 @@
 .jobs-card-cont{ 
     width: 80%;
     padding: 20px;
-    background-color: rgb(38, 35, 35);
+    background-color: rgb(81, 76, 76);
     margin-bottom: 10px;
     list-style-type: none;
     /* border-radius: 15px; */
@@ -29,6 +29,7 @@
 .location-emp-cont{
     display: flex;
     justify-content: space-between;
+   
     
     
 }

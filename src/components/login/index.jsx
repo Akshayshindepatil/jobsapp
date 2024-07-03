@@ -40,7 +40,8 @@ useEffect(()=>{
 
     if(responce.ok === true){
       setValues({...allValues,showErrorMsg:false,errorMsg:""});
-      Cookies.set("jwtToken",data.jwt_token)
+      console.log(data);
+      Cookies.set("jwtToken",data.jwt_token);
       navigate("/");
 
 

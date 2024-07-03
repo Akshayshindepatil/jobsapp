@@ -1,98 +1,64 @@
-.main-con {
-    padding: 20px;
-    background-color: #070707;
-    font-family: Arial, sans-serif;
-  }
+.main-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+.display-card{
+  width: 70%;
+  background-color: rgb(82, 75, 75);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px ;
+}
+.logo-card{
+  display: flex;
+  align-items: center;
+}
+.rating{
+  margin: 10px;
+  color: gold;
+
+}
+.skill-data{
+  color: white;
+}
+
+.location-emp-lpa{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.skill{
+  display: inline;
+  margin: 10px;
   
-  .jobs-card-cont {
-    list-style: none;
-    background: #434040;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(241, 236, 236, 0.1);
-    padding: 20px;
-    margin: 20px 0;
-  }
+}
+.similar-job-card{
+  background-color: rgb(91, 82, 82);
+  width: 40%;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.card-box{
+  display: flex;
+  align-items: center;
+ 
+
   
-  .top-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .web-logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-  }
-  
-  .top-section h4 {
-    font-size: 24px;
-    margin: 0;
-    color: #333;
-  }
-  
-  .icons-star {
-    color: #f0a500;
-    margin-left: 10px;
-  }
-  
-  .location-emp-cont {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-  }
-  
-  .m-2 {
-    margin-right: 10px;
-  }
-  
-  .location-emp-cont span {
-    color: #777;
-  }
-  
-  .bg-col {
-    border: 0;
-    height: 1px;
-    background: #ddd;
-    margin: 20px 0;
-  }
-  
-  h4 {
-    font-size: 20px;
-    color: #333;
-  }
-  
-  p {
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  .skill-d {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-  }
-  
-  .skill-d .img-d {
-    display: flex;
-    align-items: center;
-  }
-  
-  .skill-d img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  
-  .Life-of-compony {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .Life-of-compony img {
-    width: 100%;
-    max-width: 300px;
-    margin-top: 10px;
-  }
-  
+}
+.hr-line{
+  background-color: white;
+}
+.job-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
